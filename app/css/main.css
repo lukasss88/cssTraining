@@ -138,7 +138,7 @@ li:active {
 .about-us img {
     width: 100%
 }
-i {
+.single-features i {
     background: #f8f8f8 none repeat scroll 0 0;
     border: 1px solid #fff;
     border-radius: 50%;
