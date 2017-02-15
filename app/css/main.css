@@ -10,6 +10,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
+
 /*NAVBAR STYLES*/
 .navbar-header > a > img {
     width: 150px;
@@ -187,4 +188,67 @@ li:active {
     top: -14px;
     left: 6px;
     font-size: 28px;
+}
+
+.single-testimonial {
+    background: #f9f9f9 none repeat scroll 0 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+.testimonial_img img {
+    border: 4px solid #ddd;
+    border-radius: 100px;
+    float: left;
+    height: 100px;
+    margin-right: 20px;
+    width: 100px;
+}
+.testimonial_content h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-weight: 700;
+}
+.testimonial_content h4 {
+    color: #7F7F7F;
+    text-transform: none;
+    font-size: 14px;
+}
+.testimonial_content p {
+    overflow: hidden;
+}
+/*.carousel-indicators li {*/
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*width: 20px;*/
+    /*height: 6px;*/
+    /*margin-top: 60px;*/
+    /*background-color: black;*/
+/*}*/
+/*.carousel-indicators .active {*/
+    /*position: absolute;*/
+    /*display: inline-block;*/
+    /*width: 40px;*/
+    /*height: 6px;*/
+    /*margin-top: 60px;*/
+    /*margin-right: 50px;*/
+    /*background-color: #E24241;*/
+/*}*/
+#carousel1 .carousel-indicators { bottom: -80px }
+.carousel-indicators li {
+    border: 1px solid #333;
+    border-radius: 12px;
+    height: 4px;
+    margin: 0 1px;
+    width: 16px;
+    background: #333;
+}
+.carousel-indicators .active {
+    background-color: #e24241;
+    border: 1px solid #e24241;
+    height: 4px;
+    margin: 0 1px ;
+    width: 22px;
 }
