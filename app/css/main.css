@@ -219,23 +219,6 @@ li:active {
 .testimonial_content p {
     overflow: hidden;
 }
-/*.carousel-indicators li {*/
-    /*position: absolute;*/
-    /*display: inline-block;*/
-    /*width: 20px;*/
-    /*height: 6px;*/
-    /*margin-top: 60px;*/
-    /*background-color: black;*/
-/*}*/
-/*.carousel-indicators .active {*/
-    /*position: absolute;*/
-    /*display: inline-block;*/
-    /*width: 40px;*/
-    /*height: 6px;*/
-    /*margin-top: 60px;*/
-    /*margin-right: 50px;*/
-    /*background-color: #E24241;*/
-/*}*/
 #carousel1 .carousel-indicators { bottom: -80px }
 .carousel-indicators li {
     border: 1px solid #333;
@@ -251,4 +234,10 @@ li:active {
     height: 4px;
     margin: 0 1px ;
     width: 22px;
+}
+.owl-item {
+    width: 285px;
+}
+.owl-controls {
+    display: block;
 }
