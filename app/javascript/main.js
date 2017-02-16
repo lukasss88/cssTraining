@@ -7,5 +7,4 @@ $(document).ready(function(){
         itemsDesktopSmall : [979,3]
 
     });
-
 });

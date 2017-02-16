@@ -219,6 +219,10 @@ li:active {
 .testimonial_content p {
     overflow: hidden;
 }
+#carousel1{
+    margin-bottom: 70px;
+}
+
 #carousel1 .carousel-indicators { bottom: -80px }
 .carousel-indicators li {
     border: 1px solid #333;
@@ -235,9 +239,43 @@ li:active {
     margin: 0 1px ;
     width: 22px;
 }
+
+
+.partner-logo {
+    background: #f9f9f9 none repeat scroll 0 0;
+}
 .owl-item {
     width: 285px;
 }
 .owl-controls {
     display: block;
+}
+.owl-pagination {
+    display: none;
+}
+.newsletter_title {
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 30px;
+}
+#mce-email {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #333;
+     height: 50px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+footer {
+    background-color: #222222;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 14px;
 }
