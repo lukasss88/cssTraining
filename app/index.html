@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -14,11 +14,22 @@
     <!--Owl Carousel-->
     <link href="../bower_components/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="../bower_components/owl-carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+    <!--AnimateCSS-->
+    <link href="../bower_components/animate.css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
-<body>
+<body data-spy="scroll" data-offset="80">
+<!--Start Preloader-->
+<div class="preloader">
+    <div class="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
+<!--End Preloader-->
 
 <!--Navbar section-->
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top menu-top menu_dropdown">
     <div class="container">
         <div class="navbar-header">
             <!--button do hamburgera-->
@@ -38,20 +49,20 @@
                     <li><a class="page-scroll" href="#pricing">Pricing</a></li>
                     <li><a class="page-scroll" href="#clients">Clients</a></li>
                     <li><a href="#">Pages</a>
-                        <!--<ul class="sub-menu">-->
-                        <!--<li><a href="about.html">About us</a></li>-->
-                        <!--<li><a href="contact.html">Contact</a></li>-->
-                        <!--<li><a href="faq.html">Faq</a></li>-->
-                        <!--<li><a href="job.html">Jobs</a></li>-->
-                        <!--<li><a href="login_register.html">Login</a></li>-->
-                        <!--<li><a href="login_register.html">Sign up</a></li>-->
-                        <!--</ul>-->
+                        <ul class="sub-menu">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                        <li><a href="job.html">Jobs</a></li>
+                        <li><a href="login_register.html">Login</a></li>
+                        <li><a href="login_register.html">Sign up</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Blog</a>
-                        <!--<ul class="sub-menu">-->
-                        <!--<li><a href="blog.html">Blog Standard</a></li>-->
-                        <!--<li><a href="blog-post.html">Blog post</a></li>-->
-                        <!--</ul>-->
+                        <ul class="sub-menu">
+                        <li><a href="blog.html">Blog Standard</a></li>
+                        <li><a href="blog-post.html">Blog post</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -81,10 +92,10 @@
 <!-- End Background-image section-->
 
 <!-- About us section-->
-<section class="section-padding">
+<section class="section-padding" id="about">
     <div class="container">
         <div class="row">
-            <div class="text-center section-title">
+            <div class="text-center section-title wow zoomIn">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam
                     quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
@@ -104,8 +115,22 @@
             <div class="col-md-7">
                 <div id="about-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
-                        <div class
+                        <div class="item active">
+                            <img src="assets/images/1.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/2.jpg" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/3.jpg" class="img-responsive">
+                        </div>
                     </div>
+                    <a class="left slide-control" href="#about-carousel" role="button" data-slide="prev">
+                        <i class="fa  fa-angle-left"></i>
+                    </a>
+                    <a class="right slide-control" href="#about-carousel" role="button" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -114,10 +139,10 @@
 <!-- End About us section-->
 
 <!-- Features section-->
-<section class="section-padding">
+<section class="section-padding" id="features">
     <div class="container">
         <div class="row">
-            <div class="text-center section-title">
+            <div class="text-center section-title wow zoomIn">
                 <h2>Template Features</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim
                     veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
@@ -160,10 +185,10 @@
 <!-- End Features section-->
 
 <!-- Bussines plan section-->
-<section class="section-padding" style="background-color: #F9F9F9">
+<section class="section-padding" style="background-color: #F9F9F9" id="pricing">
     <div class="container">
         <div class="row">
-            <div class="text-center section-title">
+            <div class="text-center section-title wow zoomIn">
                 <h2>Choose your perfect plan</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim
                     veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
@@ -243,10 +268,10 @@
 <!-- End Bussines plan section-->
 
 <!-- Testimonials section-->
-<section class="section-padding">
+<section class="section-padding" id="clients">
     <div class="container">
         <div class="row">
-            <div class="text-center section-title">
+            <div class="text-center section-title wow zoomIn">
                 <h2>Client Testimonial</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim
                     veniam quis notru exercit ation Lorem ipsum dolor sit amet.Veniam quis notru exercit.</p>
@@ -350,7 +375,7 @@
     <div class="container">
         <div class="row">
             <div class="subscribe-input">
-                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
                     <h3 class="newsletter_title">Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam! You can un-subscribe at any time.</h3>
                     <div id="mc_embed_signup">
 
@@ -376,7 +401,7 @@
 <footer>
     <div class="container">
         <div class="row section-padding">
-            <div class="col-md-3">
+            <div class="col-md-3 wow bounceIn page-scroll" data-wow-delay=".2s" data-wow-duration="2s">
                 <h4>Contact</h4>
                 <div class="footer-contact">
                     <ul>
@@ -387,7 +412,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow bounceIn page-scroll" data-wow-delay=".3s" data-wow-duration="2s">
                 <h4>Elizabeth</h4>
                 <div class="footer-contact">
                     <ul>
@@ -399,7 +424,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow bounceIn page-scroll" data-wow-delay=".4s" data-wow-duration="2s">
                 <h4>Social</h4>
                 <div class="footer-contact">
                     <ul>
@@ -411,7 +436,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 wow bounceIn page-scroll" data-wow-delay=".5s" data-wow-duration="2s">
                 <h4>Support</h4>
                 <div class="footer-contact">
                     <ul>
@@ -438,6 +463,7 @@
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="../bower_components/wow/dist/wow.min.js"></script>
 <script src="javascript/main.js"></script>
 </body>
 </html>

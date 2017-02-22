@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
     background-color: transparent;
     border-bottom: none;
+    transition: all 0.2s ease-in-out 0s;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     margin-top: 10px;
@@ -45,11 +46,77 @@ li:active {
     background-color: transparent;
     color: white;
 }
+.navbar-default.menu-shrink {
+    background-color: #e24241;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    width: 100%;
+}
+.sub-menu {
+    background: #fff;
+    left: 10px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    padding: 15px;
+    position: absolute;
+    top: 115%;
+    left: -40%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 200px;
+    z-index: -99;
+}
+.sub-menu li {
+    padding: 0;
+    width: 100%;
+}
+.sub-menu li a {
+    border-bottom: 1px solid #eee;
+    color: #333 !important;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 13px 10px 12px;
+    text-transform: uppercase;
+}
+.menu-top li a:hover {
+    color: #fff!important;
+}
+.menu_dropdown  li ul.sub-menu,
+.menu_dropdown  ul li ul.sub-menu li ul.sub-menu {left:0%;}
+
+.menu_dropdown  ul li ul.sub-menu li ul.sub-menu {
+    top: 0;
+    left: 100%;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.menu_dropdown  ul li ul.sub-menu li {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+.menu_dropdown  ul li:hover ul.sub-menu {
+    top: 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 999;
+    visibility: visible;
+}
+.menu_dropdown  ul.nav > li ul li:hover ul.sub-menu {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+}
+.menu_dropdown  ul li ul.sub-menu li:last-child a{border-bottom:none;}
 /*BACKGROUND IMAGE STYLES*/
 .main-section {
     background-image: url("../assets/images/slide1.jpg") ;
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center center;
     height: 736px;
     position: relative;
 
@@ -105,6 +172,7 @@ li:active {
 .section-title {
     margin-bottom: 60px;
 }
+
 .section-title h2 {
     font-family: montserrat,sans-serif;
     margin-bottom: 25px;
@@ -139,6 +207,44 @@ li:active {
 .about-us img {
     width: 100%
 }
+.carousel .slide-control{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #e24241 none repeat scroll 0 0;
+    text-align: center;
+
+    top: 50%;
+    margin-top: -25px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.carousel .slide-control.left {
+    left: 100px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.carousel .slide-control.right {
+    right: 100px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.hover-left-arrow {
+    left: 30px !important;
+    opacity: 0.95 !important;
+    transition: 0.3s;
+}
+.hover-right-arrow {
+    right: 30px !important;
+    opacity: 0.95 !important;
+    transition: 0.3s;
+}
+
+
+
 .single-features i {
     background: #f8f8f8 none repeat scroll 0 0;
     border: 1px solid #fff;
@@ -322,4 +428,54 @@ footer ul li i {
     font-family: montserrat,sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+.status-mes {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-right: 2px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+    border-left: 2px solid #000;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
